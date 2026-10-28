@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: creador-notas-antlr
+    runtime: docker
+    plan: free
+    envVars:
+      - key: PORT
+        value: 10000
+    healthCheckPath: /
